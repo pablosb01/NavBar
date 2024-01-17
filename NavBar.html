@@ -14,11 +14,12 @@
     <a>Link</a>
     <a>Disabled</a>
     <a>
-        <input type="checkbox" id="dropdown-toggle">
-        <label for="dropdown-toggle"><a href="#">Dropdown</a></label>
+        <a href="#" onclick="toggleDropdown('optionsDropdown')">Dropdown</a>
 
-        <ul>
+        <ul id="optionsDropdown" style="display: none;">
+
             <li><a href="/HTML/Ejercicios/NavBar/pages/option1.html"></a>Option 1</li>
+            <li><a href="/HTML/Ejercicios/NavBar/pages/option2.html"></a>Option 2</li>
 
 
         </ul>
@@ -27,6 +28,17 @@
     </a>
 
     </nav>
+
+    <script>
+        function toggleDropdown(dropdownId) {
+            var dropdown = document.getElementById(dropdownId);
+            if (dropdown.style.display === "none" || dropdown.style.display === "") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 </html>
