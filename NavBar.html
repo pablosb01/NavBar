@@ -14,7 +14,14 @@
     <a>Link</a>
     <a>Disabled</a>
     <a>
-        <a href="#" onclick="toggleDropdown('optionsDropdown')">Dropdown</a>
+        <select id="Opciones" name="Dropdown" >
+            <option href="/HTML/Ejercicios/NavBar/pages/option1.html">Opcion 1</option>
+            <option href="/HTML/Ejercicios/NavBar/pages/option2.html">Opcion 2</option>
+
+        </select>
+
+
+        <!-- <a href="#" onclick="toggleDropdown('optionsDropdown')">Dropdown</a>
 
         <ul id="optionsDropdown" style="display: none;">
 
@@ -22,14 +29,15 @@
             <li><a href="/HTML/Ejercicios/NavBar/pages/option2.html"></a>Option 2</li>
 
 
-        </ul>
+        </ul> -->
         
+    
 
     </a>
-
+    <a><input type="search" id="search" name="q" placeholder="Browser"></a>
     </nav>
 
-    <script>
+    <!-- <script>
         function toggleDropdown(dropdownId) {
             var dropdown = document.getElementById(dropdownId);
             if (dropdown.style.display === "none" || dropdown.style.display === "") {
@@ -38,7 +46,7 @@
                 dropdown.style.display = "none";
             }
         }
-    </script>
+    </script> -->
 
 </body>
 </html>
